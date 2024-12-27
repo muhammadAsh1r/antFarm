@@ -45,6 +45,19 @@ class AntFarm{
         }
 };
 
+class Meadow{
+private:
+    vector<AntFarm> farm;
+public:
+    Meadow(){
+        AntFarm farms = new Meadow();
+    }
+
+    void addAntFarm(shared_ptr<AntFarm> farm) {
+        antFarms.push_back(farm);
+    }
+};
+
 int main() {
   
   return 0;
