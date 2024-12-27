@@ -1,4 +1,5 @@
 #include <iostream>
+#include<vector>
 using namespace std;
 
 class Ant{
@@ -20,6 +21,28 @@ class Ant{
     void consume_food(){
         cout << "Ant consuming food" << endl;
     }
+
+    void start_construction(){
+            cout << "Ant constructing" << endl;        
+    }
+};
+
+class AntFarm{
+    private:
+        string species;
+        vector <Ant> ants;
+    public:
+        AntFarm(string sp){
+            species = sp;
+        }
+
+        void addAnt(Ant &ant){
+            ants.push_back(ant);
+        }
+
+        void performTick(){
+            ants->start_construction();
+        }
 };
 
 int main() {
