@@ -47,6 +47,7 @@ class AntFarm{
 
 class Meadow{
 private:
+    static Meadow *temp;
     vector<AntFarm> farm;
 public:
     Meadow(){
