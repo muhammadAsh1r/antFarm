@@ -2,7 +2,8 @@
 using namespace std;
 
 class Ant{
-    int number_of_ants;
+    int number_of_ants = 0;
+    int number_of_ants_resting = 0;
     string queen;
     string pawn;
     public:
@@ -11,9 +12,17 @@ class Ant{
             cout << "Batlle Won!";
         }
     }
+
+    void rest() {
+        cout << "Ant resting" << endl;
+    }
+
+    void consume_food(){
+        cout << "Ant consuming food" << endl;
+    }
 };
 
 int main() {
-  cout << "Hello World!";
+  
   return 0;
 }
